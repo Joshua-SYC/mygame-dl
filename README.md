@@ -42,12 +42,6 @@ $ npm start
 - [React](https://github.com/facebook/react)
 - [Redux](https://github.com/reduxjs/redux)
 
-## Donation
-
-<a href="https://www.patreon.com/junlico">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
