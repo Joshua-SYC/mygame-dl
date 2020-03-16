@@ -1,0 +1,25 @@
+.checkbox {
+  @include user-select-none;
+
+  width: 100%;
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked + label {
+      background-color: $blue0;
+    }
+  }
+
+  label {
+    @include flex-c;
+    width: 100%;
+    height: $text-field-height;
+    box-shadow: 0 0 5px -3px $black0;
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+}

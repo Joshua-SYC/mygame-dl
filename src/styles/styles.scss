@@ -1,0 +1,90 @@
+@import './variables';
+@import './mixin';
+@import './class';
+
+@import './components/image';
+@import './components/input';
+@import './components/button';
+@import './components/arrow';
+
+@import './components/Checkbox';
+@import './components/Select';
+@import './components/Slider';
+@import './components/BtnPanel';
+@import './components/SplitBtn';
+
+@import './pages/stats';
+@import './pages/facility';
+
+// mobile
+@media screen and (max-width: $mobile) {
+  main {
+    > div + div {
+      margin-top: $unit1;
+    }
+  }
+
+  #filters {
+    padding: $unit0;
+
+    > div + div {
+      margin-top: $unit0;
+    }
+  }
+
+  .check-box-list {
+    gap: $unit0;
+  }
+}
+
+// tablet
+@media screen and (min-width: $mobile + 1px) and (max-width: $laptop - 1px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr $unit1 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: $unit1;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'col1 col2'
+      'col3 col3';
+
+    #stats-col1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-row: 1;
+      grid-column: 1;
+      grid-area: col1;
+    }
+
+    #stats-col2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-row: 1;
+      grid-column: 3;
+      grid-area: col2;
+    }
+
+    #stats-col3 {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-row: 3;
+      grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: col3;
+    }
+  }
+}
+
+// laptop
+@media screen and (min-width: $laptop) {
+  @include facility--laptop;
+  main {
+    &#stats,
+    &#facility {
+      @include grid(3);
+    }
+  }
+}
