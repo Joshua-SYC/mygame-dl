@@ -19,6 +19,7 @@
 - [English](https://dragalialost.info/stats/en)
 - [日本語](https://dragalialost.info/stats/ja)
 - [简体中文](https://dragalialost.info/stats/zh)
+- [本站](https://joshua-syc.github.io/mygame-dl)
 
 ## Installation
 This instruction will get you a copy of the project and running on your local machine for development and testing purposes. To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with npm) installed on your computer. From your command line:
